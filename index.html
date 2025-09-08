@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Meal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+    <!---------------- First Part -------------- -->
+    <div class="firstPart">
+        <!-- Navbar -->
+        <div class="navbar">
+
+            <!--Nav Logo -->
+            <div id="maintitle">CoffeeCo</div>
+
+            <!-- Navbar Option -->
+            <div class="navOption">
+                <div class="nav-item" data-section="home">
+                    <span>Home</span>
+                    <i class="fas fa-home"></i>
+                </div>
+                <div class="nav-item dropdown" data-section="coffee">
+                    <span>Coffee</span>
+                    <i class="fas fa-coffee"></i>
+                    <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    <div class="dropdown-menu">
+                        <a href="#" data-filter="hot">Hot Coffee</a>
+                        <a href="#" data-filter="cold">Cold Coffee</a>
+                        <a href="#" data-filter="espresso">Espresso</a>
+                        <a href="#" data-filter="specialty">Specialty Drinks</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown" data-section="bakery">
+                    <span>Bakery</span>
+                    <i class="fas fa-birthday-cake"></i>
+                    <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    <div class="dropdown-menu">
+                        <a href="#" data-filter="desserts">Desserts</a>
+                        <a href="#" data-filter="pastries">Pastries</a>
+                        <a href="#" data-filter="cookies">Cookies</a>
+                        <a href="#" data-filter="cakes">Cakes</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown" data-section="shop">
+                    <span>Shop</span>
+                    <i class="fas fa-shopping-bag"></i>
+                    <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    <div class="dropdown-menu">
+                        <a href="#" data-filter="beans">Coffee Beans</a>
+                        <a href="#" data-filter="equipment">Equipment</a>
+                        <a href="#" data-filter="merchandise">Merchandise</a>
+                        <a href="#" data-filter="gifts">Gift Cards</a>
+                    </div>
+                </div>
+                <div class="nav-item" data-section="about">
+                    <span>About</span>
+                    <i class="fas fa-info-circle"></i>
+                </div>
+            </div>
+
+            <!-- Nav Search and Actions -->
+            <div class="nav-actions">
+                <!-- Search -->
+                <div id="search">
+                    <input type="text" placeholder="Search coffee, desserts..." id="searchInput">
+                    <button id="searchBtn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <div class="search-suggestions" id="searchSuggestions"></div>
+                </div>
+
+                <!-- User Profile -->
+                <div class="user-profile" id="userProfile">
+                    <div class="profile-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="profile-menu">
+                        <div class="profile-info">
+                            <div class="profile-name">Guest User</div>
+                            <div class="profile-email">guest@coffeeco.com</div>
+                        </div>
+                        <div class="profile-actions">
+                            <a href="#" class="profile-action">
+                                <i class="fas fa-user-edit"></i>
+                                Edit Profile
+                            </a>
+                            <a href="#" class="profile-action">
+                                <i class="fas fa-cog"></i>
+                                Settings
+                            </a>
+                            <a href="#" class="profile-action">
+                                <i class="fas fa-sign-out-alt"></i>
+                                Logout
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Welcome message -->
+        <div class="hero-content">
+            <div id="leftText">Welcome!</div>
+            <div id="leftText">We serve the richest coffee</div>
+            <div id="leftText">in the city!</div>
+            <button id="orderNow"> Order now</button>
+        </div>
+    </div>
+
+    <!---------------- Second Part -------------- -->
+    <div class="secondPart">
+        <!-- First Item -->
+        <div class="item">
+            <div id="cofee">☕️</div>
+            <div id="itemName">Hot Coffee</div>
+        </div>
+        <!-- Second Item -->
+        <div class="item">
+            <div id="cofee">🧋</div>
+            <div id="itemName">Cold Coffee</div>
+        </div>
+        <!-- Third Item -->
+        <div class="item">
+            <div id="cofee">🥤</div>
+            <div id="itemName">Cup Coffee</div>
+        </div>
+        <!-- Fourth Item -->
+        <div class="item">
+            <div id="coffee">🍰</div>
+            <div id="itemName">Dessert </div>
+        </div>
+    </div>
+
+    <!---------------- Third Part -------------- -->
+    <div class="thirdPart">
+        <!-- Title Name -->
+        <div class="title">OUR SPECIAL COFFEE</div>
+
+
+        <!-- Drink -->
+        <div class="specialDrink">
+
+            <!-- 1st drink -->
+            <div class="drink">
+                <div id="image"><img src="Images/caffeine-1845314_1280.jpg" alt=""></div>
+                <div id="drinkName">Lungo Coffee</div>
+                <div id="description">An expresso coffee drink, topped with a small</div>
+                <div class="order">
+                    <div id="drinkPrice">Rs. 199</div>
+                    <button id="order">Order Now</button>
+                </div>
+            </div>
+
+            <!-- 2nd drink -->
+            <div class="drink">
+                <div id="image"><img src="Images/iced-coffee-6876063_640.jpg" alt=""></div>
+                <div id="drinkName">Dalgona Coffee</div>
+                <div id="description">An chocolatey coffee drink, topped choco chips</div>
+                <div class="order">
+                    <div id="drinkPrice">Rs. 159</div>
+                    <button id="order">Order Now</button>
+                </div>
+            </div>
+
+
+            <!-- 3th drink -->
+            <div class="drink">
+                <div id="image"><img src="Images/coffee-7840771_640.jpg" alt=""></div>
+                <div id="drinkName">Iced Coffee</div>
+                <div id="description">Iced coffee is cold beaverage coffee</div>
+                <div class="order">
+                    <div id="drinkPrice">Rs. 110</div>
+                    <button id="order">Order Now</button>
+                </div>
+            </div>
+
+
+            <!-- 4th drink -->
+            <div class="drink">
+                <div id="image"><img src="Images/dalgona-coffee-5489306_640.png" alt=""></div>
+                <div id="drinkName">Filter Coffee</div>
+                <div id="description">An chocolatey coffee drink, topped choco chips</div>
+                <div class="order">
+                    <div id="drinkPrice">Rs. 139</div>
+                    <button id="order">Order Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Title Name -->
+        <div class="title">OUR SPECIAL DESSERTS</div>
+
+        <!-- Dessarts -->
+        <div class="specialDrink">
+
+            <!-- 1st drink -->
+            <div class="drink">
+                <div id="image"><img src="Images/gulab-jamun-desi-ghee.jpg" alt=""></div>
+                <div id="drinkName">Gulab Jamun</div>
+                <div id="description">Made with milk, sugar solids and rose water</div>
+                <div class="order">
+                    <div id="drinkPrice">Rs. 199</div>
+                    <button id="order">Order Now</button>
+                </div>
+            </div>
+
+            <!-- 2nd drink -->
+            <div class="drink">
+                <div id="image"><img src="Images/rasgulla.jpeg" alt=""></div>
+                <div id="drinkName"> Rasgulla</div>
+                <div id="description">Made with milk, sugar solids and rose water</div>
+                <div class="order">
+                    <div id="drinkPrice">Rs. 159</div>
+                    <button id="order">Order Now</button>
+                </div>
+            </div>
+
+
+            <!-- 3th drink -->
+            <div class="drink">
+                <div id="image"><img src="Images/images.jpeg" alt=""></div>
+                <div id="drinkName">Rasmalai</div>
+                <div id="description">Made with milk, sugar solids and rose water</div>
+                <div class="order">
+                    <div id="drinkPrice">Rs. 110</div>
+                    <button id="order">Order Now</button>
+                </div>
+            </div>
+
+
+            <!-- 4th drink -->
+            <div class="drink">
+                <div id="image"><img src="Images/kaju-sweets-9477189_640.jpg" alt=""></div>
+                <div id="drinkName"> Kaju katli</div>
+                <div id="description">Made with milk, sugar solids</div>
+                <div class="order">
+                    <div id="drinkPrice">Rs. 139</div>
+                    <button id="order">Order Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------- Forth part ---------------->
+    <div class="forthpart">
+        <div id="firstline">Check out our best</div>
+        <div id="second">coffee betans</div>
+        <button id="secondline">Explore our products</button>
+    </div>
+
+    <!-- ------------ Fifth Part ------------ -->
+    <div class="fifthPart">
+        <div id="title">OUR HAPPY CUSTOMERS</div>
+
+        <div class="fifthSubPart">
+
+            <!-- First Review -->
+            <div class="feedback">
+                <div class="review">
+                    <div class="biodata">
+                        <img id="profile" src="Images/IMG_0802gur.JPG" alt="">
+                        <div id="name">Aditi Suman <br><span>Freelancer</span></div>
+                    </div>
+                    <div class="rating"></div>
+                </div>
+                <div id="reviewLine">
+                    I've been ordering beans from you for ten vears. the auality of the product is
+                    consistentiv hiah! im aratetul for the care that is apparently put into the roasts and the excellent
+                    customer service. your beans give way to
+                    the best cuos of cottee
+                </div>
+            </div>
+
+
+            <!-- Second Review -->
+            <div class="feedback">
+                <div class="review">
+                    <div class="biodata">
+                        <img id="profile" src="" alt="">
+                        <div id="name">Adarsh Suman <br><span>Freelancer</span></div>
+
+                    </div>
+                    <div class="rating"></div>
+                </div>
+                <div id="reviewLine">
+                    I've been ordering beans from you for ten vears. the auality of the product is
+                    consistentiv hiah! im aratetul for the care that is apparently put into the roasts and the excellent
+                    customer service. your beans give way to
+                    the best cuos of cottee
+                </div>
+            </div>
+
+
+            <!-- Third Review -->
+            <div class="feedback">
+                <div class="review">
+                    <div class="biodata">
+                        <img id="profile" src="" alt="">
+                        <div id="name">Aditya Suman <br><span>Freelancer</span></div>
+                    </div>
+                    <div class="rating"></div>
+                </div>
+                <div id="reviewLine">
+                    I've been ordering beans from you for ten vears. the auality of the product is
+                    consistentiv hiah! im aratetul for the care that is apparently put into the roasts and the excellent
+                    customer service. your beans give way to
+                    the best cuos of cottee
+                </div>
+            </div>
+        </div>
+        <div class="dots">
+            <div id="nextDot"></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- Sixth Part -->
+    <div class="sixthPart">
+        <div class="line">
+            <div id="firstLine">Join in and get 15% Off!</div>
+            <div id="secLine">Subscribe to our newsletter and get 15% off discount code</div>
+        </div>
+
+        <!-- Message -->
+        <div class="msg">
+            <input type="email" name="email" id="mail" placeholder="Enter your email address">
+            <button id="subscribe">Subscribe</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <!-- First -->
+        <div class="first">
+            <div id="logoFooter">COFFEE</div>
+        </div>
+
+        <!-- Second -->
+        <div class="footerNav">
+            <div id="privacy">Privacy</div>
+            <div>Terms of use</div>
+            <div>Privacy</div>
+            <div>Cookies</div>
+        </div>
+
+        <!-- Third -->
+        <div class="footerNav">
+            <div id="privacy">Services</div>
+            <div>Shop</div>
+            <div>Order ahead</div>
+            <div>Menu</div>
+        </div>
+
+        <!-- Fourth -->
+        <div class="footerNav">
+            <div id="privacy">About Us</div>
+            <div>Find a location</div>
+            <div>About Us </div>
+            <div>Our Story</div>
+        </div>
+
+        <!-- Fifth -->
+        <div class="footerNav">
+            <div id="privacy">Information</div>
+            <div>Plan and pricing</div>
+            <div>Sell your products </div>
+            <div>Jobs</div>
+        </div>
+
+        <!-- Sixth -->
+        <div class="footerNav">
+            <div id="privacy">Social media</div>
+            <div class="socailMedia">
+                <div id="facebook"><i class="fab fa-facebook-f"></i> Facebook</div>
+                <div id="insta"><i class="fab fa-instagram"></i> Instagram</div>
+                <div id="email"><i class="fab fa-youtube"></i> YouTube</div>
+
+
+            </div>
+
+
+        </div>
+
+
+</body>
+
+</html>
